@@ -1,0 +1,47 @@
+<div class="container brands-view">
+  <div class="row">
+    <h2 class="col-sm" >Dirk</h2>
+    <h2 class="col-sm" style="text-align:right">Kandidat</h2>
+  </div>
+  <div class="row">
+    <table class="col-sm-2">
+      <tr>
+        <td class="score-box" *ngFor="let entry of first_to_Dirk">
+          <img class="score-box" src="{{getBox(entry.count,1)}}" type="button" (click)="toggleBox(entry.count,1)">
+        </td>
+      </tr>
+    </table>
+    <div class="col-sm-8"></div>
+    <table class="col-sm-2">
+      <tr>
+        <td  class="score-box" *ngFor="let entry of first_to_Cand">
+          <img class="score-box" src="{{getBox(entry.count,2)}}" type="button" (click)="toggleBox(entry.count,2)">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <table>
+        <tr *ngFor="let row of table; trackBy: trackRow">
+          <td *ngFor="let cell of row; trackBy: trackRecord">
+            <div class="card brand-card">
+              <img src="{{ cell.sol ? getSol(cell.id) : getLogo(cell.id) }}" type="button" (click)="toggleSol(cell.id)">
+              <my-child [showMePartially]="sol"></my-child>
+              <p class="brand_cell_number">{{cell.id}}</p>
+            </div>
+
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row level-nav">
+    <button class="btn btn-primary col-sm" style=" float: left;" (click)="previousLevel()">Previous Round</button>
+    <p class="round-count col-sm">Runde: {{level+1}}</p>
+    <button class="btn btn-primary col-sm" style="float: right;" (click)="nextLevel()">Next Round</button>
+  </div>
+
+
+</div>

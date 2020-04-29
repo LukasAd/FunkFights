@@ -1,0 +1,62 @@
+brands-view {
+  width: 900px;
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.brand-div {
+  margin: auto;
+  /* width: 900px; */
+  height: 700px;
+}
+
+.brand-card {
+  margin: 20px;
+  padding: 5px;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.brand_cell_number {
+  position: relative;
+  bottom: 0px;
+  left: 75px;
+  text-size-adjust: 50;
+}
+
+table {
+  margin: auto;
+}
+
+.level-nav {
+  margin: auto;
+  padding: 25px;
+  width: 900px;
+}
+
+.border {
+  border: solid;
+  background-color: yellow;
+}
+
+.round-count {
+  text-align: center;
+  display: inline;
+}
+
+.score-box {
+  width:40px;
+  height:40px;
+
+}
+
+body{
+  color: violet;
+}
