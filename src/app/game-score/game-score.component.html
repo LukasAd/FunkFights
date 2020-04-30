@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <h2 class="col-sm" style="text-align:left">Dirk</h2>
+        <h2 class="col-sm" style="text-align:right">{{matchData.candidate}}</h2>
+    </div>
+    <div class="row">
+        <table class="col-sm-2">
+            <tr>
+                <td class="score-box" *ngFor="let entry of first_to_Dirk">
+                    <img class="score-box" src="{{getBox(entry.count,1)}}" type="button"
+                        (click)="toggleBox(entry.count,1)">
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-8"></div>
+        <table class="col-sm-2">
+            <tr>
+                <td class="score-box" *ngFor="let entry of first_to_Cand">
+                    <img class="score-box" src="{{getBox(entry.count,2)}}" type="button"
+                        (click)="toggleBox(entry.count,2)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

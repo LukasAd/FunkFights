@@ -1,0 +1,27 @@
+<div class="container" style="width:200px">
+    <div class="row">
+        <div class="col-sm">
+            <div class="container" style="height:200px;">
+                <div class="h-25 row">
+                    <div class="card col-sm" [ngClass]="{'blue': dirkWins, 'red': candWins}">
+                        <h3 style="text-align: center;">
+                            {{category}}
+                        </h3>
+                    </div>
+                </div>
+                <div class="h-25 row">
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(0)" [ngClass]="{'blue': toggle[0]}"></div>
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(1)" [ngClass]="{'red': toggle[1]}"></div>
+                </div>
+                <div class="h-25 row">
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(2)" [ngClass]="{'blue': toggle[2]}"></div>
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(3)" [ngClass]="{'red': toggle[3]}"></div>
+                </div>
+                <div class="h-25 row">
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(4)" [ngClass]="{'blue': toggle[4]}"></div>
+                    <div class="btn btn-primary col-sm" (click)="toggleColor(5)" [ngClass]="{'red': toggle[5]}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

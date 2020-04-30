@@ -1,6 +1,9 @@
-import { Component, OnInit, SystemJsNgModuleLoader, TrackByFunction } from '@angular/core';
+import { Component, OnInit, TrackByFunction } from '@angular/core';
+import { MatchDataService } from '../matchData/matchData.service';
 import BrandsJson from '../../assets/brands/brands.json';
-import { pathToFileURL } from 'url';
+import { MatchData } from '../matchData/matchData';
+
+
 
 @Component({
   selector: 'app-brands',
@@ -9,28 +12,30 @@ import { pathToFileURL } from 'url';
 })
 export class BrandsComponent implements OnInit {
 
-  public columns = 4;
-  recordsPerLevel = 12;
-  level = 0;
-  private records = BrandsJson;
-  private subRecords = [];
-  first_to_Dirk = [
-    { 'count': 0, 'vis': false },
-    { 'count': 1, 'vis': false },
-    { 'count': 2, 'vis': false },
-  ]
-
-  first_to_Cand = [
-    { 'count': 0, 'vis': false },
-    { 'count': 1, 'vis': false },
-    { 'count': 2, 'vis': false },
-  ]
+  startGameBool: boolean = true;
+  matchData : MatchData;
+  columns : number = 4;
+  recordsPerLevel : number = 12;
+  level : number = 0;
+  records = BrandsJson;
+  subRecords = [];
+ 
 
 
-  constructor() { }
+  constructor(private matchDataService: MatchDataService) { }
 
   ngOnInit() {
     this.setRoundRecords();
+    this.setMatchData();
+  }
+
+  startGame(){
+    console.log(this.startGameBool);
+    this.startGameBool = !this.startGameBool;
+  }
+
+  setMatchData(){
+    this.matchData = this.matchDataService.getMatchData();
   }
 
   public setRoundRecords() {
@@ -60,7 +65,6 @@ export class BrandsComponent implements OnInit {
   };
 
   public getLogo(id) {
-    //console.log(id)
     let path = '../../assets/brands/' + id + '/logo.png'
     return path;
   }
@@ -70,32 +74,7 @@ export class BrandsComponent implements OnInit {
     return path;
   }
 
-  public getBox(c, i) {
-    let path = '';
-    if (i == 1) {
-      if (this.first_to_Dirk[c].vis) {
-        path = '../../assets/raw/box_filled.png';
-      } else {
-        path = '../../assets/raw/box_empty.png';
-      }
-    } else {
-      if (this.first_to_Cand[c].vis) {
-        path = '../../assets/raw/box_filled.png';
-      } else {
-        path = '../../assets/raw/box_empty.png';
-      }
-    }
 
-    return path;
-  }
-
-  public toggleBox(c, i) {
-    if (i == 1) {
-      this.first_to_Dirk[c].vis = !this.first_to_Dirk[c].vis;
-    } else {
-      this.first_to_Cand[c].vis = !this.first_to_Cand[c].vis;
-    }
-  }
 
   public toggleSol(i) {
     i = i - 1;
