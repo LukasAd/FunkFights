@@ -5,18 +5,46 @@
 // Color system
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #999 !default;
-$gray-600: #7A8288 !default;
-$gray-700: #52575C !default;
-$gray-800: #3A3F44 !default;
-$gray-900: #272B30 !default;
-$black:    #000 !default;
 
+$main-100: #ffe5ff !default;
+$main-200: #feb3ff !default;
+$main-300: #fd80ff !default;
+$main-400: #fc4dff !default;
+$main-500: #fc1aff !default;
+$main-600: #b000b3 !default;
+$main-700: #7e0080 !default;
+$main-800: #410042 !default;
+$main-xxx: #410042 !default;
+$main-900: #19001a !default;
+
+
+$accent-100: #d8b3ff !default;
+$accent-200: #bd80ff !default;
+$accent-300: #a34dff !default;
+$accent-400: #891aff !default;
+$accent-500: #6f00e6 !default;
+$accent-600: #5600b3 !default;
+$accent-700: #3e0080 !default;
+$accent-800: #25004d !default;
+$accent-xxx: #2d005d !default;
+$accent-900: #25004d !default;
+
+
+$decor-100: #fee7f2 !default;
+$decor-200: #fbb6d7 !default;
+$decor-300: #f985bc !default;
+$decor-400: #f755a2 !default;
+$decor-xxx: #f759a4 !default;
+$decor-500: #f42487 !default;
+$decor-600: #db0b6d !default;
+$decor-700: #aa0855 !default;
+$decor-800: #7a063d !default;
+$decor-900: #490424 !default;
+
+
+$white:   #fff !default;
+$black:   #000 !default;
+$gray:    #6a737c !default;
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -28,20 +56,20 @@ $green:   #62c462 !default;
 $teal:    #20c997 !default;
 $cyan:    #5bc0de !default;
 
-$primary:       $gray-800 !default;
-$secondary:     $gray-600 !default;
+$primary:       $main-800 !default;
+$secondary:     $main-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-200 !default;
-$dark:          $gray-900 !default;
+$light:         $main-200 !default;
+$dark:          $main-900 !default;
 
 $yiq-contrasted-threshold:  170 !default;
 
 // Body
 
-$body-bg:                   $gray-900 !default;
+$body-bg:                   $main-900 !default;
 $body-color:                #aaa !default;
 
 // Links
@@ -74,7 +102,7 @@ $input-disabled-bg:                     #ccc !default;
 
 // Dropdowns
 
-$dropdown-bg:                       $gray-800 !default;
+$dropdown-bg:                       $main-800 !default;
 $dropdown-border-color:             rgba($black, .6) !default;
 $dropdown-divider-bg:               rgba($black,.15) !default;
 
@@ -95,8 +123,8 @@ $navbar-padding-y:                  0 !default;
 
 $navbar-dark-hover-color:           $white !default;
 
-$navbar-light-hover-color:          $gray-800 !default;
-$navbar-light-active-color:         $gray-800 !default;
+$navbar-light-hover-color:          $main-800 !default;
+$navbar-light-active-color:         $main-800 !default;
 
 
 // Pagination
@@ -118,12 +146,12 @@ $pagination-disabled-border-color:  rgba($black, 0.6) !default;
 
 // Jumbotron
 
-$jumbotron-bg:                      darken($gray-900, 5%) !default;
+$jumbotron-bg:                      darken($main-900, 5%) !default;
 
 // Cards
 
 $card-border-color:                 rgba($black, 0.6) !default;
-$card-cap-bg:                       lighten($gray-800, 10%) !default;
+$card-cap-bg:                       lighten($main-800, 10%) !default;
 $card-bg:                           lighten($body-bg, 5%) !default;
 
 // Popovers
@@ -147,8 +175,8 @@ $modal-header-border-color:         rgba(0,0,0,.2) !default;
 
 // Progress bars
 
-$progress-bg:                       darken($gray-900, 5%) !default;
-$progress-bar-color:                $gray-600 !default;
+$progress-bg:                       darken($main-900, 5%) !default;
+$progress-bar-color:                $main-600 !default;
 
 // List group
 
@@ -160,13 +188,13 @@ $list-group-active-color:           $white !default;
 $list-group-active-bg:              $list-group-hover-bg !default;
 $list-group-active-border-color:    $list-group-border-color !default;
 
-$list-group-disabled-color:         $gray-700 !default;
+$list-group-disabled-color:         $main-700 !default;
 
 $list-group-action-color:           $white !default;
 
 // Breadcrumbs
 
-$breadcrumb-active-color:           $gray-500 !default;
+$breadcrumb-active-color:           $main-500 !default;
 
 // Code
 
