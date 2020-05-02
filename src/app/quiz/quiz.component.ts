@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
   bestOf: number = 5;
-  categories : string[] = ["Sport","Geschichte","Aktuelles","Politik","Astro Astro"];
+  categories: string[] = ["Sport", "Geschichte", "Aktuelles", "Politik", "Astro Astro"];
   startGameBool: boolean = false;
 
   constructor() { }
@@ -15,7 +15,7 @@ export class QuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  startGame(){
+  startGame() {
     this.startGameBool = !this.startGameBool;
   }
 }
