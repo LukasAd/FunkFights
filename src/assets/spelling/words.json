@@ -1,362 +1,452 @@
 [
     {
         "id": 1,
-        "word": "Skype",
+        "word": "Dackel",
         "level": 1,
         "solved": false
     },
     {
         "id": 2,
-        "word": "Skype",
+        "word": "Fahne",
         "level": 1,
         "solved": false
     },
     {
         "id": 3,
-        "word": "Skype",
+        "word": "Höhle",
         "level": 1,
         "solved": false
     },
     {
         "id": 4,
-        "word": "Skype",
+        "word": "Zunge",
         "level": 1,
         "solved": false
     },
     {
         "id": 5,
-        "word": "Skype",
+        "word": "Finte",
         "level": 1,
         "solved": false
     },
     {
         "id": 6,
-        "word": "Skype",
+        "word": "Lösung",
         "level": 1,
         "solved": false
     },
     {
         "id": 7,
-        "word": "Skype",
+        "word": "Ritze",
         "level": 1,
         "solved": false
     },
     {
         "id": 8,
-        "word": "Skype",
+        "word": "Politik",
         "level": 1,
         "solved": false
     },
     {
         "id": 9,
-        "word": "Skype",
+        "word": "ohne",
         "level": 1,
         "solved": false
     },
     {
         "id": 10,
-        "word": "Skype",
+        "word": "Meise",
         "level": 1,
         "solved": false
     },
     {
         "id": 11,
-        "word": "Skype",
+        "word": "loben",
         "level": 1,
         "solved": false
     },
     {
         "id": 12,
-        "word": "Skype",
+        "word": "Liebe",
         "level": 1,
         "solved": false
     },
     {
         "id": 13,
-        "word": "Skype",
+        "word": "ungut",
         "level": 1,
         "solved": false
     },
     {
         "id": 14,
-        "word": "Skype",
+        "word": "rennen",
         "level": 1,
         "solved": false
     },
     {
         "id": 15,
-        "word": "Skype",
+        "word": "Sprint",
         "level": 1,
         "solved": false
     },
     {
         "id": 16,
-        "word": "Skype",
+        "word": "Adresse",
         "level": 2,
         "solved": false
     },
     {
         "id": 17,
-        "word": "Skype",
+        "word": "Gangster",
         "level": 2,
         "solved": false
     },
     {
         "id": 18,
-        "word": "Skype",
+        "word": "Charisma",
         "level": 2,
         "solved": false
     },
     {
         "id": 19,
-        "word": "Skype",
+        "word": "Fitness",
         "level": 2,
         "solved": false
     },
     {
         "id": 20,
-        "word": "Skype",
+        "word": "Dudelsack",
         "level": 2,
         "solved": false
     },
     {
         "id": 21,
-        "word": "Skype",
+        "word": "Gitarre",
         "level": 2,
         "solved": false
     },
     {
         "id": 22,
-        "word": "Skype",
+        "word": "Joghurt/Jogurt",
         "level": 2,
         "solved": false
     },
     {
         "id": 23,
-        "word": "Skype",
+        "word": "minimal",
         "level": 2,
         "solved": false
     },
     {
         "id": 24,
-        "word": "Skype",
+        "word": "nämlich",
         "level": 2,
         "solved": false
     },
     {
         "id": 25,
-        "word": "Skype",
+        "word": "Quarzuhr",
         "level": 2,
         "solved": false
     },
     {
         "id": 26,
-        "word": "Skype",
+        "word": "komplett",
         "level": 2,
         "solved": false
     },
     {
         "id": 27,
-        "word": "Skype",
+        "word": "vielleicht",
         "level": 2,
         "solved": false
     },
     {
         "id": 28,
-        "word": "Skype",
+        "word": "Hanfsamen",
         "level": 2,
         "solved": false
     },
     {
         "id": 29,
-        "word": "Skype",
+        "word": "Masterarbeit",
         "level": 2,
         "solved": false
     },
     {
         "id": 30,
-        "word": "Skype",
+        "word": "buchstabieren",
         "level": 2,
         "solved": false
     },
     {
         "id": 31,
-        "word": "Skype",
+        "word": "googeln",
         "level": 3,
         "solved": false
     },
     {
         "id": 32,
-        "word": "Skype",
+        "word": "Empathie",
         "level": 3,
         "solved": false
     },
     {
         "id": 33,
-        "word": "Skype",
+        "word": "galoppieren",
         "level": 3,
         "solved": false
     },
     {
         "id": 34,
-        "word": "Skype",
+        "word": "Graffiti",
         "level": 3,
         "solved": false
     },
     {
         "id": 35,
-        "word": "Skype",
+        "word": "aggressiv",
         "level": 3,
         "solved": false
     },
     {
         "id": 36,
-        "word": "Skype",
+        "word": "Mobiliar",
         "level": 3,
         "solved": false
     },
     {
         "id": 37,
-        "word": "Skype",
+        "word": "Ukulele",
         "level": 3,
         "solved": false
     },
     {
         "id": 38,
-        "word": "Skype",
+        "word": "Satellit",
         "level": 3,
         "solved": false
     },
     {
         "id": 39,
-        "word": "Skype",
+        "word": "Xylophon/Xylofon",
         "level": 3,
         "solved": false
     },
     {
         "id": 40,
-        "word": "Skype",
+        "word": "Trilogie",
         "level": 3,
         "solved": false
     },
     {
         "id": 41,
-        "word": "Skype",
+        "word": "unsympathisch",
         "level": 3,
         "solved": false
     },
     {
         "id": 42,
-        "word": "Skype",
+        "word": "unentgeltlich",
         "level": 3,
         "solved": false
     },
     {
         "id": 43,
-        "word": "Skype",
+        "word": "wiederum",
         "level": 3,
         "solved": false
     },
     {
         "id": 44,
-        "word": "Skype",
+        "word": "Mathematik",
         "level": 3,
         "solved": false
     },
     {
         "id": 45,
-        "word": "Skype",
+        "word": "lynchen",
         "level": 3,
         "solved": false
     },
     {
         "id": 46,
-        "word": "Skype",
+        "word": "adäquat",
         "level": 4,
         "solved": false
     },
     {
         "id": 47,
-        "word": "Skype",
+        "word": "Portemonnaie/Portmonee",
         "level": 4,
         "solved": false
     },
     {
         "id": 48,
-        "word": "Skype",
+        "word": "Katastrophal",
         "level": 4,
         "solved": false
     },
     {
         "id": 49,
-        "word": "Skype",
+        "word": "Gratwanderung",
         "level": 4,
         "solved": false
     },
     {
         "id": 50,
-        "word": "Skype",
+        "word": "Akquise",
         "level": 4,
         "solved": false
     },
     {
         "id": 51,
-        "word": "Skype",
+        "word": "Kumulation",
         "level": 4,
         "solved": false
     },
     {
         "id": 52,
-        "word": "Skype",
+        "word": "Symmetrie",
         "level": 4,
         "solved": false
     },
     {
         "id": 53,
-        "word": "Skype",
+        "word": "Zucchini",
         "level": 4,
         "solved": false
     },
     {
         "id": 54,
-        "word": "Skype",
+        "word": "Porzellan",
         "level": 4,
         "solved": false
     },
     {
         "id": 55,
-        "word": "Skype",
+        "word": "Reling",
         "level": 4,
         "solved": false
     },
     {
         "id": 56,
-        "word": "Skype",
+        "word": "Rhetorik",
         "level": 4,
         "solved": false
     },
     {
         "id": 57,
-        "word": "Skype",
+        "word": "Resümee",
         "level": 4,
         "solved": false
     },
     {
         "id": 58,
-        "word": "Skype",
+        "word": "Rückgrat",
         "level": 4,
         "solved": false
     },
     {
         "id": 59,
-        "word": "Skype",
+        "word": "Verwandtschaft",
         "level": 4,
         "solved": false
     },
     {
         "id": 60,
-        "word": "Skype",
+        "word": "Jackett",
         "level": 4,
+        "solved": false
+    },
+    {
+        "id": 61,
+        "word": "syllabieren",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 62,
+        "word": "Mitochondrium",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 63,
+        "word": "Chrysantheme",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 64,
+        "word": "Diarrhö",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 65,
+        "word": "dilettantisch",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 66,
+        "word": "Hasardeur",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 67,
+        "word": "Lappalie",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 68,
+        "word": "Ouvertüre",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 69,
+        "word": "Stracciatella",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 70,
+        "word": "applanieren",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 71,
+        "word": "Diphtherie",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 72,
+        "word": "Epikureer",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 73,
+        "word": "Mischpoche",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 74,
+        "word": "Indanthren",
+        "level": 5,
+        "solved": false
+    },
+    {
+        "id": 75,
+        "word": "Souterrain",
+        "level": 5,
         "solved": false
     }
 ]

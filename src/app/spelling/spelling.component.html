@@ -12,7 +12,7 @@
 
     <div *ngIf="!startGameBool">
         <div class="row justify-content-center">
-            <div class="card" style="padding:10px" (click)="setWord('')">
+            <div class="card" style="padding:10px" (click)="setWord(-1,'')">
                 <div class="row">
                     <h2 class="col-sm">Lösung:</h2>
                     <h2 class="col-sm">{{word}}</h2>
@@ -24,7 +24,7 @@
             <table>
                 <tr *ngFor="let row of table; trackBy: trackRow">
                     <td *ngFor="let cell of row; trackBy: trackRecord" style="padding: 10px;"> 
-                        <button class="btn-primary word-btn" (click)="setWord(cell.word)">{{cell.id}}</button>
+                        <button class="btn-primary word-btn" (click)="setWord(cell.id,cell.word)" [ngClass]="{'solved': cell.solved}">{{cell.id%15}}</button>
                     </td>
                 </tr>
             </table>
