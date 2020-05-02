@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
+  bestOf: number = 5;
   categories : string[] = ["Sport","Geschichte","Aktuelles","Politik","Astro Astro"];
   startGameBool: boolean = false;
 

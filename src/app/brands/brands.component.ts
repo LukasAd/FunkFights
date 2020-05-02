@@ -11,7 +11,7 @@ import { MatchData } from '../matchData/matchData';
   styleUrls: ['./brands.component.css']
 })
 export class BrandsComponent implements OnInit {
-
+  bestOf : number = 5;
   startGameBool: boolean = true;
   matchData: MatchData;
   columns: number = 4;
