@@ -1,40 +1,29 @@
 import { Component, OnInit, TrackByFunction } from '@angular/core';
-import { MatchDataService } from '../matchData/matchData.service';
-import BrandsJson from '../../assets/brands/brands.json';
-import { MatchData } from '../matchData/matchData';
-
-
+import WordsJson from '../../assets/spelling/words.json';
 
 @Component({
-  selector: 'app-brands',
-  templateUrl: './brands.component.html',
-  styleUrls: ['./brands.component.css']
+  selector: 'app-spelling',
+  templateUrl: './spelling.component.html',
+  styleUrls: ['./spelling.component.css']
 })
-export class BrandsComponent implements OnInit {
-
-  startGameBool: boolean = true;
-  matchData : MatchData;
-  columns : number = 4;
-  recordsPerLevel : number = 12;
+export class SpellingComponent implements OnInit {
+  startGameBool : boolean = true;
+  columns : number = 5;
+  recordsPerLevel : number = 15;
   level : number = 0;
-  records = BrandsJson;
+  word : string = "";
+  records = WordsJson;
   subRecords = [];
- 
 
 
-  constructor(private matchDataService: MatchDataService) { }
+  constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.setRoundRecords();
-    this.setMatchData();
   }
 
   startGame(){
     this.startGameBool = !this.startGameBool;
-  }
-
-  setMatchData(){
-    this.matchData = this.matchDataService.getMatchData();
   }
 
   public setRoundRecords() {
@@ -63,27 +52,6 @@ export class BrandsComponent implements OnInit {
     return item;
   };
 
-  public getLogo(id) {
-    let path = '../../assets/brands/' + id + '/logo.png'
-    return path;
-  }
-
-  public getSol(id) {
-    let path = '../../assets/brands/' + id + '/sol.png'
-    return path;
-  }
-
-
-
-  public toggleSol(i) {
-    i = i - 1;
-    console.log(i)
-    console.log(this.records);
-    console.log(this.records[i]);
-    this.records[i].sol = !this.records[i].sol;
-    console.log(this.records[i].sol);
-  }
-
   public previousLevel() {
     this.level--;
     this.setRoundRecords();
@@ -94,4 +62,7 @@ export class BrandsComponent implements OnInit {
     this.setRoundRecords();
   }
 
+  public setWord(w){
+    this.word = w;
+  }
 }

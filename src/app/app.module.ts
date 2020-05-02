@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { QuizCategoryComponent } from './quiz/quiz-category/quiz-category.component';
 import { GameScoreComponent } from './game-score/game-score.component';
+import { SpellingComponent } from './spelling/spelling.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { GameScoreComponent } from './game-score/game-score.component';
     QuizComponent,
     QuizCategoryComponent,
     GameScoreComponent,
+    SpellingComponent,
   ],
   imports: [
     FormsModule,

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Buchstabieren</h1>
+    </div>
+    <br>
+
+    <div *ngIf="startGameBool">
+        <div class="row justify-content-sm-center" style="margin-top:20px">
+            <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <div *ngIf="!startGameBool">
+        <div class="row justify-content-center">
+            <div class="card" style="padding:10px" (click)="setWord('')">
+                <div class="row">
+                    <h2 class="col-sm">Lösung:</h2>
+                    <h2 class="col-sm">{{word}}</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <table>
+                <tr *ngFor="let row of table; trackBy: trackRow">
+                    <td *ngFor="let cell of row; trackBy: trackRecord" style="padding: 10px;"> 
+                        <button class="btn-primary word-btn" (click)="setWord(cell.word)">{{cell.id}}</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <button class="btn btn-primary col-sm" style=" float: left;" (click)="previousLevel()">Previous Round</button>
+            <h2 class="round-count col-sm">Runde: {{level+1}}</h2>
+            <button class="btn btn-primary col-sm" style="float: right;" (click)="nextLevel()">Next Round</button>
+        </div>
+
+    </div>
+
+</div>
