@@ -25,7 +25,7 @@ export class GameScoreComponent implements OnInit {
   }
 
   setPointBoxes() {
-    let boxCount = Math.floor(this.bestOf/2) + 1;
+    let boxCount = Math.floor(this.bestOf / 2) + 1;
     for (let i = 0; i < boxCount; i++) {
       this.firstToDirk.push({ 'count': i, 'vis': false });
       this.firstToCand.push({ 'count': i, 'vis': false })
