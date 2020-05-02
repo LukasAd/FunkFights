@@ -10,6 +10,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { QuizCategoryComponent } from './quiz/quiz-category/quiz-category.component';
 import { GameScoreComponent } from './game-score/game-score.component';
 import { SpellingComponent } from './spelling/spelling.component';
+import { MusicquizComponent } from './musicquiz/musicquiz.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SpellingComponent } from './spelling/spelling.component';
     QuizCategoryComponent,
     GameScoreComponent,
     SpellingComponent,
+    MusicquizComponent,
   ],
   imports: [
     FormsModule,
