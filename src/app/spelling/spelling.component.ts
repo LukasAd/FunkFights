@@ -65,10 +65,8 @@ export class SpellingComponent implements OnInit {
   public setWord(id,w){
     if(id!=-1){
       id = id-1;
-      console.log(id)
-      console.log(this.records[id].solved);
       this.records[id].solved = !this.records[id].solved;
-      console.log(this.records[id].solved);
+
     }   
     this.word = w;
   }
