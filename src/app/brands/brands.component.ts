@@ -13,13 +13,13 @@ import { MatchData } from '../matchData/matchData';
 export class BrandsComponent implements OnInit {
 
   startGameBool: boolean = true;
-  matchData : MatchData;
-  columns : number = 4;
-  recordsPerLevel : number = 12;
-  level : number = 0;
+  matchData: MatchData;
+  columns: number = 4;
+  recordsPerLevel: number = 12;
+  level: number = 0;
   records = BrandsJson;
   subRecords = [];
- 
+
 
 
   constructor(private matchDataService: MatchDataService) { }
@@ -29,11 +29,11 @@ export class BrandsComponent implements OnInit {
     this.setMatchData();
   }
 
-  startGame(){
+  startGame() {
     this.startGameBool = !this.startGameBool;
   }
 
-  setMatchData(){
+  setMatchData() {
     this.matchData = this.matchDataService.getMatchData();
   }
 
@@ -77,11 +77,7 @@ export class BrandsComponent implements OnInit {
 
   public toggleSol(i) {
     i = i - 1;
-    console.log(i)
-    console.log(this.records);
-    console.log(this.records[i]);
     this.records[i].sol = !this.records[i].sol;
-    console.log(this.records[i].sol);
   }
 
   public previousLevel() {
