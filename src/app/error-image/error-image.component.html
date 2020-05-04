@@ -1,0 +1,28 @@
+<h1 style="text-align:center">Fehlerbilder</h1>
+<app-game-score [bestOf]="bestOf"></app-game-score>
+
+<div *ngIf="!startGameBool">
+    <div class="row justify-content-sm-center" style="margin-top:20px">
+        <button class="btn-primary col-sm-3" (click)="toggleStartGame()">Start Game</button>
+    </div>
+</div>
+<br>
+<div *ngIf="startGameBool">
+    <div class="container">
+        <div class="row">
+            <img class="col-6" src={{getOriginalImagePath(level)}}>
+            <img class="col-6" src={{getErrorImagePath(level)}} (click)="toggleSol(level)">
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-primary col-sm" style=" float: left;" (click)="previousLevel()">Previous
+                Round</button>
+            <h2 class="round-count col-sm" style="text-align: center;">Runde: {{level}}</h2>
+            <button class="btn btn-primary col-sm" style="float: right;" (click)="nextLevel()">Next Round</button>
+        </div>
+    </div>
+</div>
+<br>

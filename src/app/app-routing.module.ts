@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { SpellingComponent } from './spelling/spelling.component';
 import { MusicquizComponent } from './musicquiz/musicquiz.component';
+import { ErrorImageComponent } from './error-image/error-image.component';
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'brands', component: BrandsComponent},
   { path: 'spelling', component: SpellingComponent},
-  { path: 'musicquiz', component: MusicquizComponent}
+  { path: 'musicquiz', component: MusicquizComponent},
+  { path: 'error-image', component: ErrorImageComponent}
 ];
 
 @NgModule({

@@ -11,6 +11,7 @@ import { QuizCategoryComponent } from './quiz/quiz-category/quiz-category.compon
 import { GameScoreComponent } from './game-score/game-score.component';
 import { SpellingComponent } from './spelling/spelling.component';
 import { MusicquizComponent } from './musicquiz/musicquiz.component';
+import { ErrorImageComponent } from './error-image/error-image.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MusicquizComponent } from './musicquiz/musicquiz.component';
     GameScoreComponent,
     SpellingComponent,
     MusicquizComponent,
+    ErrorImageComponent,
   ],
   imports: [
     FormsModule,
