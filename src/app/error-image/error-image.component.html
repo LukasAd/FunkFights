@@ -2,8 +2,10 @@
 <app-game-score [bestOf]="bestOf"></app-game-score>
 
 <div *ngIf="!startGameBool">
-    <div class="row justify-content-sm-center" style="margin-top:20px">
-        <button class="btn-primary col-sm-2" (click)="toggleStartGame()">Start Game</button>
+    <div class="container">
+        <div class="row justify-content-sm-center" style="margin-top:20px">
+            <button class="btn-primary col-sm-2" (click)="toggleStartGame()">Start Game</button>
+        </div>
     </div>
 </div>
 <br>
