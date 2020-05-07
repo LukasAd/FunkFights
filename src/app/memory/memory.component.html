@@ -1,0 +1,37 @@
+<div class="container">
+    <div *ngIf="startGameBool">
+        <div class="row justify-content-sm-center" style="margin-top:20px">
+            <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <div *ngIf="!startGameBool">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="col-sm" style="text-align: right" [ngClass]="{'turn': dirksTurn}">Dirk</h2>
+                <h2 class="col-sm" style="text-align: left" [ngClass]="{'turn': dirksTurn}">{{dirkCount}}</h2>
+                <div class="col-sm btn btn-primary" (click)="proceed()">confirm</div>
+                <h2 class="col-sm" style="text-align:right" [ngClass]="{'turn': !dirksTurn}">{{candCount}}</h2>
+                <h2 class="col-sm" style="text-align: left" [ngClass]="{'turn': !dirksTurn}">{{matchData.candidate}}
+                </h2>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <table>
+                    <tr *ngFor="let row of table; index as x; trackBy: trackRow">
+                        <td *ngFor="let cell of row; index as y; trackBy: trackRecord">
+                            <div class="container">
+
+                                <img class="m-card" src="{{getImagePath(cell.index)}}" type="button"
+                                    (click)="toggleShowImage(cell.index)">
+                                <my-child [showMePartially]="sol"></my-child>
+                                <div style="text-align:center">{{y+x*columns}}</div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
