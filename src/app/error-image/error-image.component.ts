@@ -7,16 +7,19 @@ import ErrorImageJson from '../../assets/error-image/error-images.json';
   styleUrls: ['./error-image.component.css']
 })
 export class ErrorImageComponent implements OnInit {
-  bestOf: number = 5;
+  bestOf: number = 9;
   records = ErrorImageJson;
   maxLevel: number;
-  level: number = 1;
+  level: number = 0;
   startGameBool: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.records.length;
+    console.log(this.records);
+    console.log(this.level);
+    console.log(this.records.length);
+    this.maxLevel = this.records.length;
   }
 
   toggleStartGame() {
@@ -24,27 +27,27 @@ export class ErrorImageComponent implements OnInit {
   }
 
   getOriginalImagePath(id) {
-    console.log(id);
-    if (id < 1 || id > this.records.length) {
+    if (id < 0 || id > this.records.length - 1 ) {
       return "../../assets/error-image/original.png";
     }
-    return "../../assets/error-image/" + id + "/original.jpg"
+    return "../../assets/error-image/" + id + "/original.png"
   }
 
   getErrorImagePath(id) {
-    if (id < 1 || id > this.records.length) {
+    console.log(id);
+    if (id < 0 || id > this.records.length -1) {
       return "../../assets/error-image/error.png";
-    } else if (this.records[id - 1].sol) {
-      return "../../assets/error-image/" + id + "/sol.jpg";
-    } else if (!this.records[id - 1].sol) {
-      return "../../assets/error-image/" + id + "/error.jpg";
+    } else if (this.records[id].sol) {
+      return "../../assets/error-image/" + id + "/sol.png";
+    } else if (!this.records[id].sol) {
+      return "../../assets/error-image/" + id + "/error.png";
     } else {
       return "";
     }
   }
 
   toggleSol(id) {
-    this.records[id - 1].sol = !this.records[id - 1].sol;
+    this.records[id].sol = !this.records[id].sol;
   }
 
   public previousLevel() {
