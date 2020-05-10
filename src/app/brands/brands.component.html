@@ -22,7 +22,7 @@
                   <my-child [showMePartially]="sol"></my-child>
                 </div>
                 <div class="row" style="height:30px">
-                  <p class="brand_cell_number" style="font-size:20px">{{cell.id%recordsPerLevel}}</p>
+                  <p class="brand_cell_number" style="font-size:20px">{{(cell.id-1)%recordsPerLevel}}</p>
                 </div>
 
               </div>
