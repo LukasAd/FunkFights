@@ -7,6 +7,7 @@ import { SpellingComponent } from './spelling/spelling.component';
 import { MusicquizComponent } from './musicquiz/musicquiz.component';
 import { ErrorImageComponent } from './error-image/error-image.component';
 import { MemoryComponent } from './memory/memory.component';
+import { CardDuelComponent } from './card-duel/card-duel.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'spelling', component: SpellingComponent},
   { path: 'musicquiz', component: MusicquizComponent},
   { path: 'error-image', component: ErrorImageComponent},
-  { path: 'memory', component: MemoryComponent}
+  { path: 'memory', component: MemoryComponent},
+  { path: 'card-duel', component: CardDuelComponent}
 ];
 
 @NgModule({

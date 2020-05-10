@@ -1,0 +1,48 @@
+<h2 style="text-align:center" style="text-align:center">Kartenduell</h2>
+<div class="container">
+
+    <div class="row">
+        <h2 class="col-sm" style="text-align:left">Dirk</h2>
+        <h2 class="col-sm" style="text-align:right">{{matchData.candidate}}</h2>
+    </div>
+    <div class="row">
+        <h2 class="col-1 card" style="text-align:left">{{dirkPoints}}</h2>
+        <h2 class="col-10"></h2>
+        <h2 class="col-1 card" style="text-align:right">{{candPoints}}</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <form class="form">
+                <input #dirkInput type="password">
+            </form>
+        </div>
+        <div class="col-1"></div>
+        <button class="col-2 btn btn-primary " (click)="processInput(dirkInput.value,candInput.value); dirkInput.value=''; candInput.value=''">
+            confirm
+        </button>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <form class="form">
+                <input #candInput type="password">
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <br>
+    <br>   
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div class="card col-2 result-card">
+            <h2 style="font-size:100px;">{{dirkCard}}</h2>
+        </div>
+        <div class="col-1"></div>
+        <div class="card col-2 result-card">
+            <h2 style="font-size:100px;">{{candCard}}</h2>
+        </div>
+    </div>
+
+
+</div>
