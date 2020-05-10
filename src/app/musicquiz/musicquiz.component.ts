@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./musicquiz.component.css']
 })
 export class MusicquizComponent implements OnInit {
-  bestOf: number = 9;
+  bestOf: number = 13;
 
 
   constructor() { }
