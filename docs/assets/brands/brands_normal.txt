@@ -1,0 +1,25 @@
+normal:
+-atari
+-delta
+-target
+-timberland
+-yamaha
+-lays
+-dove
+-budweiser
+-chupa chups
+-nikon
+-Kawasaki
+-fairtrade
+-ironman
+-lg
+-ubisoft
+-faber castell
+-western digital
+-lindt
+-bosch
+-bacardi
+-vans
+-hummel
+-carlsberg
+-maybach
