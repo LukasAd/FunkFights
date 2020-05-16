@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Skype",
+        "sol": false
+    },
+    {
+        "id": 2,
+        "name": "Microsoft",
+        "sol": false
+    },
+    {
+        "id": 3,
+        "name": "Adobe",
+        "sol": false
+    },
+    {
+        "id": 4,
+        "name": "Samsung",
+        "sol": false
+    },
+    {
+        "id": 5,
+        "name": "MTV",
+        "sol": false
+    },
+    {
+        "id": 6,
+        "name": "Atari",
+        "sol": false
+    },
+    {
+        "id": 7,
+        "name": "Delta Airlines",
+        "sol": false
+    },
+    {
+        "id": 8,
+        "name": "Target",
+        "sol": false
+    },
+    {
+        "id": 9,
+        "name": "Air Berlin",
+        "sol": false
+    },
+    {
+        "id": 10,
+        "name": "Guitar Hero",
+        "sol": false
+    },
+    {
+        "id": 11,
+        "name": "After Eight",
+        "sol": false
+    },
+    {
+        "id": 12,
+        "name": "Walmart",
+        "sol": false
+    },
+    {
+        "id": 13,
+        "name": "Pepsi",
+        "sol": false
+    },
+    {
+        "id": 14,
+        "name": "Visa",
+        "sol": false
+    },
+    {
+        "id": 15,
+        "name": "Knorr",
+        "sol": false
+    },
+    {
+        "id": 16,
+        "name": "Adidas",
+        "sol": false
+    },
+    {
+        "id": 17,
+        "name": "Timberland",
+        "sol": false
+    },
+    {
+        "id": 18,
+        "name": "Yamaha",
+        "sol": false
+    },
+    {
+        "id": 19,
+        "name": "Lays",
+        "sol": false
+    },
+    {
+        "id": 20,
+        "name": "Dove",
+        "sol": false
+    },
+    {
+        "id": 21,
+        "name": "Converse",
+        "sol": false
+    },
+    {
+        "id": 22,
+        "name": "Lancia",
+        "sol": false
+    },
+    {
+        "id": 23,
+        "name": "Asics",
+        "sol": false
+    },
+    {
+        "id": 24,
+        "name": "Linkin Park",
+        "sol": false
+    },
+    {
+        "id": 25,
+        "name": "Lacoste",
+        "sol": false
+    },
+    {
+        "id": 26,
+        "name": "Fisherman's Friend",
+        "sol": false
+    },
+    {
+        "id": 27,
+        "name": "Champions League",
+        "sol": false
+    },
+    {
+        "id": 28,
+        "name": "Nvidia",
+        "sol": false
+    },
+    {
+        "id": 29,
+        "name": "Budweiser",
+        "sol": false
+    },
+    {
+        "id": 30,
+        "name": "Chupa Chups",
+        "sol": false
+    },
+    {
+        "id": 31,
+        "name": "Nikon",
+        "sol": false
+    },
+    {
+        "id": 32,
+        "name": "Kawasaki",
+        "sol": false
+    },
+    {
+        "id": 33,
+        "name": "Nasa",
+        "sol": false
+    },
+    {
+        "id": 34,
+        "name": "Logitech",
+        "sol": false
+    },
+    {
+        "id": 35,
+        "name": "Stabilo",
+        "sol": false
+    },
+    {
+        "id": 36,
+        "name": "Eurosport",
+        "sol": false
+    },
+    {
+        "id": 37,
+        "name": "Subaru",
+        "sol": false
+    },
+    {
+        "id": 38,
+        "name": "Unicef",
+        "sol": false
+    },
+    {
+        "id": 39,
+        "name": "Lufthansa",
+        "sol": false
+    },
+    {
+        "id": 40,
+        "name": "Chevrolet",
+        "sol": false
+    },
+    {
+        "id": 41,
+        "name": "Fairtrade",
+        "sol": false
+    },
+    {
+        "id": 42,
+        "name": "LG",
+        "sol": false
+    },
+    {
+        "id": 43,
+        "name": "Ubisoft",
+        "sol": false
+    },
+    {
+        "id": 44,
+        "name": "Faber Castell",
+        "sol": false
+    },
+    {
+        "id": 45,
+        "name": "Danone",
+        "sol": false
+    },
+    {
+        "id": 46,
+        "name": "HSBC",
+        "sol": false
+    },
+    {
+        "id": 47,
+        "name": "Spar",
+        "sol": false
+    },
+    {
+        "id": 48,
+        "name": "Mastercard",
+        "sol": false
+    },
+    {
+        "id": 49,
+        "name": "LucasArts",
+        "sol": false
+    },
+    {
+        "id": 50,
+        "name": "Allianz",
+        "sol": false
+    },
+    {
+        "id": 51,
+        "name": "Ikea",
+        "sol": false
+    },
+    {
+        "id": 52,
+        "name": "Chanel",
+        "sol": false
+    },
+    {
+        "id": 53,
+        "name": "Tempo",
+        "sol": false
+    },
+    {
+        "id": 54,
+        "name": "Western Digital",
+        "sol": false
+    },
+    {
+        "id": 55,
+        "name": "Lindt",
+        "sol": false
+    },
+    {
+        "id": 56,
+        "name": "Bosch",
+        "sol": false
+    },
+    {
+        "id": 57,
+        "name": "Bridgestone",
+        "sol": false
+    },
+    {
+        "id": 58,
+        "name": "SAP",
+        "sol": false
+    },
+    {
+        "id": 59,
+        "name": "Hotwheels",
+        "sol": false
+    },
+    {
+        "id": 60,
+        "name": "Gatorade",
+        "sol": false
+    },
+    {
+        "id": 61,
+        "name": "UPS",
+        "sol": false
+    },
+    {
+        "id": 62,
+        "name": "Nivea",
+        "sol": false
+    },
+    {
+        "id": 63,
+        "name": "Maybach",
+        "sol": false
+    },
+    {
+        "id": 64,
+        "name": "Corona",
+        "sol": false
+    },
+    {
+        "id": 65,
+        "name": "Bacardi",
+        "sol": false
+    },
+    {
+        "id": 66,
+        "name": "Vans",
+        "sol": false
+    },
+    {
+        "id": 67,
+        "name": "Intel",
+        "sol": false
+    },
+    {
+        "id": 68,
+        "name": "Carlsberg",
+        "sol": false
+    },
+    {
+        "id": 69,
+        "name": "Ericsson",
+        "sol": false
+    },
+    {
+        "id": 70,
+        "name": "Wilson",
+        "sol": false
+    },
+    {
+        "id": 71,
+        "name": "Mattel",
+        "sol": false
+    },
+    {
+        "id": 72,
+        "name": "Dupont",
+        "sol": false
+    }
+]
