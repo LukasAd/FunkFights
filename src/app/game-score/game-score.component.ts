@@ -36,15 +36,15 @@ export class GameScoreComponent implements OnInit {
     let path = '';
     if (i == 1) {
       if (this.firstToDirk[c].vis) {
-        path = '../../assets/raw/box_filled.png';
+        path = 'assets/raw/box_filled.png';
       } else {
-        path = '../../assets/raw/box_empty.png';
+        path = 'assets/raw/box_empty.png';
       }
     } else {
       if (this.firstToCand[c].vis) {
-        path = '../../assets/raw/box_filled.png';
+        path = 'assets/raw/box_filled.png';
       } else {
-        path = '../../assets/raw/box_empty.png';
+        path = 'assets/raw/box_empty.png';
       }
     }
 

@@ -28,19 +28,19 @@ export class ErrorImageComponent implements OnInit {
 
   getOriginalImagePath(id) {
     if (id < 0 || id > this.records.length - 1 ) {
-      return "../../assets/error-image/original.png";
+      return "assets/error-image/original.png";
     }
-    return "../../assets/error-image/" + id + "/original.png"
+    return "assets/error-image/" + id + "/original.png"
   }
 
   getErrorImagePath(id) {
     console.log(id);
     if (id < 0 || id > this.records.length -1) {
-      return "../../assets/error-image/error.png";
+      return "assets/error-image/error.png";
     } else if (this.records[id].sol) {
-      return "../../assets/error-image/" + id + "/sol.png";
+      return "assets/error-image/" + id + "/sol.png";
     } else if (!this.records[id].sol) {
-      return "../../assets/error-image/" + id + "/error.png";
+      return "assets/error-image/" + id + "/error.png";
     } else {
       return "";
     }

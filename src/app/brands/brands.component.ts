@@ -64,12 +64,12 @@ export class BrandsComponent implements OnInit {
   };
 
   public getLogo(id) {
-    let path = '../../assets/brands/' + id + '/logo.png'
+    let path = 'assets/brands/' + id + '/logo.png'
     return path;
   }
 
   public getSol(id) {
-    let path = '../../assets/brands/' + id + '/sol.png'
+    let path = 'assets/brands/' + id + '/sol.png'
     return path;
   }
 
