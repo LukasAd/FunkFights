@@ -78,13 +78,13 @@ export class MemoryComponent implements OnInit {
   getImagePath(index) {
     for (let el of this.solvedRecords) {
       if (el == this.records[index]) {
-        return "../../assets/memory/solved.png";
+        return "assets/memory/solved.png";
       }
     }
     if (this.records[index].show) {
-      return "../../assets/memory/" + this.records[index].id + "/card.png";
+      return "assets/memory/" + this.records[index].id + "/card.png";
     } else {
-      return "../../assets/memory/covered.png";
+      return "assets/memory/covered.png";
     }
   }
 
