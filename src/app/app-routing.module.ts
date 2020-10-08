@@ -8,6 +8,7 @@ import { MusicquizComponent } from './musicquiz/musicquiz.component';
 import { ErrorImageComponent } from './error-image/error-image.component';
 import { MemoryComponent } from './memory/memory.component';
 import { CardDuelComponent } from './card-duel/card-duel.component';
+import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
 
 
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'musicquiz', component: MusicquizComponent},
   { path: 'error-image', component: ErrorImageComponent},
   { path: 'memory', component: MemoryComponent},
-  { path: 'card-duel', component: CardDuelComponent}
+  { path: 'card-duel', component: CardDuelComponent},
+  { path: 'whenwasthat', component: WhenwasthatComponent},
 ];
 
 @NgModule({

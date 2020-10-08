@@ -14,6 +14,7 @@ import { MusicquizComponent } from './musicquiz/musicquiz.component';
 import { ErrorImageComponent } from './error-image/error-image.component';
 import { MemoryComponent } from './memory/memory.component';
 import { CardDuelComponent } from './card-duel/card-duel.component';
+import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CardDuelComponent } from './card-duel/card-duel.component';
     ErrorImageComponent,
     MemoryComponent,
     CardDuelComponent,
+    WhenwasthatComponent,
   ],
   imports: [
     FormsModule,

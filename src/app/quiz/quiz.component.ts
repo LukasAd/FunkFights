@@ -10,6 +10,7 @@ export class QuizComponent implements OnInit {
   categories: string[] = ["Sport", "Geschichte", "Aktuelles", "Politik", "Astro"];
   startGameBool: boolean = false;
 
+
   constructor() { }
 
   ngOnInit(): void {
