@@ -1,65 +1,78 @@
 <div class="container">
-    <h1 style="text-align:center">Wann war das?</h1>
+  <h1 style="text-align:center">Wann war das?</h1>
 
-    <app-game-score [bestOf]="bestOf"></app-game-score>
+  <app-game-score [bestOf]="bestOf"></app-game-score>
 
-    <div class="row" style="margin-top:100px;"></div>
+  <div class="row" style="margin-top:100px;"></div>
 
 
-    <div *ngIf="!startGameBool">
-        <div class="row justify-content-sm-center" style="margin-top:20px">
-            <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
-        </div>
+  <div *ngIf="!startGameBool">
+    <div class="row justify-content-sm-center" style="margin-top:20px">
+      <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
     </div>
+  </div>
 
-    <div *ngIf="startGameBool">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2">
-                <form class="form">
-                    <input #dirkInput>
-                </form>
-            </div>
-            <div class="col-1"></div>
-            <button class="col-2 btn btn-primary "
-                (click)="processInput(dirkInput.value,candInput.value); dirkInput.value=''; candInput.value=''">
-                confirm
-            </button>
-            <div class="col-1"></div>
-            <div class="col-2">
-                <form class="form">
-                    <input #candInput>
-                </form>
-            </div>
-            <div class="col-2"></div>
+  <div *ngIf="startGameBool">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2">
+        <form class="form">
+          <input #dirkInput>
+        </form>
+      </div>
+      <div class="col-1"></div>
+      <button class="col-1 btn btn-primary ctrl-btn" (click)="updateTolerance(false)">
+        -
+      </button>
+      <button class="col-2 btn btn-primary ctrl-btn"
+        (click)="processInput(dirkInput.value,candInput.value); dirkInput.value=''; candInput.value=''"
+        [ngClass]="{'correct':candSolution==='correct','incorrect':candSolution==='incorrect','unanswered':candSolution==='unanswered'}">
+        {{confirmButtonText}}
+      </button>
+      <button class="col-1 btn btn-primary ctrl-btn" (click)="updateTolerance(true)">
+        +
+      </button>
+      <div class="col-1"></div>
+      <div class="col-2">
+        <form class="form">
+          <input #candInput>
+        </form>
+      </div>
+      <div class="col-1"></div>
 
 
+    </div>
+    <br>
+    <div class="row q-box" style="padding: 20px;">
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="card q-card">
+            <h2>
+              Frage: {{dates[level].question}}
+            </h2>
+          </div>
         </div>
-        <br>
-        <div class="row border">
-            <div class="container">
-                <div class="row justify-content-sm-center">
-                    <div class="card" (click)="updateTolerance(true)">Frage: {{dates[level].question}}</div>
-                </div>
-                <br>
-                <div class="row justify-content-sm-center">
-                    <div *ngFor="let t of tolerances">
-                        <div class="card" (click)="updateTolerance(false)"
-                            [ngClass]="{'inRange':(t >= (0-toleranceLevel)*dates[level].factor && t <= toleranceLevel*dates[level].factor)}">
-                            {{t}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <br>
         <div class="row justify-content-sm-center">
-            <button class="btn btn-primary col-sm" style=" float: left;" (click)="updateLevel(false)">Previous
-                Round</button>
-            <h2 class="col-sm justify-content-sm-center" style="text-align: center;">Runde: {{level+1}}</h2>
-            <button class="btn btn-primary col-sm" style="float: right;" (click)="updateLevel(true)">Next Round</button>
+          <div *ngFor="let t of toleranceStrings">
+            <div class="card tol-card"
+              [ngClass]="{'inRange':(t >= yearCardValue-(toleranceLevel*date.factor) && t <= yearCardValue+toleranceLevel*date.factor)}">
+              <div class="tol-text">
+                {{t}}
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
+
+    <br>
+    <div class="row justify-content-sm-center">
+      <button class="btn btn-primary col-sm" style=" float: left;" (click)="updateLevel(false)">Previous
+        Round</button>
+      <h2 class="col-sm justify-content-sm-center" style="text-align: center;">Runde: {{level+1}}</h2>
+      <button class="btn btn-primary col-sm" style="float: right;" (click)="updateLevel(true)">Next Round</button>
+    </div>
+
+  </div>
 </div>

@@ -1,3 +1,46 @@
 .inRange{
-    color: green;
+    background-color: green;
+    color: white;
 }
+
+.tol-card{
+    width: 80px;
+    text-align: center;
+    margin: 2px;
+}
+
+.tol-text{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.q-box{
+    padding:20px;
+    border-style: solid;
+    border-color: var(--secondary);
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.ctrl-btn{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.q-card{
+    padding: 15px;
+}
+
+.correct{
+    background-color: green;
+}
+
+.incorrect{
+    background-color: red;
+}
+
+.unanswered{
+    background-color: var(--primary);
+}
+
