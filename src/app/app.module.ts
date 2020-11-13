@@ -15,6 +15,8 @@ import { ErrorImageComponent } from './error-image/error-image.component';
 import { MemoryComponent } from './memory/memory.component';
 import { CardDuelComponent } from './card-duel/card-duel.component';
 import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
+import { SortComponent } from './sort/sort.component';
+import { AllPagesComponent } from './all-pages/all-pages.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
     MemoryComponent,
     CardDuelComponent,
     WhenwasthatComponent,
+    SortComponent,
+    AllPagesComponent,
   ],
   imports: [
     FormsModule,

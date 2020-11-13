@@ -1,0 +1,55 @@
+.topic{
+    color: white;
+    border: 5px dotted;
+    border-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.rnk{
+    padding: 5px 5px 5px 10px;
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.rnk-tbl{
+    width: 100%;
+}
+
+.choices{
+    margin: 5px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.q-box{
+    padding:10px;
+    margin: 20px;
+    /*
+    border-style: solid;
+    border-color: var(--secondary);
+    border-width: 5px;
+    border-radius: 10px;*/
+    height: 500px;
+    
+}
+
+/* mark correct solutions temporary green*/
+@keyframes correct {
+    from {background-color: green;}
+    to {background-color: #320034;}
+}
+.correct {
+    animation-name: correct;
+    animation-duration: 2s;
+}
+
+/* color incorrect solutions red */
+.incorrect {
+    background-color: red;
+}
+
+/* make solved choices invisible */
+.solved {
+    color:  var(--primary);
+}

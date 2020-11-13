@@ -1,0 +1,106 @@
+[{
+    "topic": "Unternehmenswerte (nach Martkwert)",
+    "reference": {
+      "label": "Allianz",
+      "rank": 5,
+      "value": "100,4 Mrd.",
+      "solved": false
+    },
+    "entries": [{
+        "label": "SAP",
+        "rank": 1,
+        "value": "138,9 Mrd.",
+        "solved": false
+      },
+      {
+        "label": "Siemens",
+        "rank": 2,
+        "value": "112,5 Mrd.",
+        "solved": false
+      }, {
+        "label": "Bayer",
+        "rank": 3,
+        "value": "104,6 Mrd.",
+        "solved": false
+      }, {
+        "label": "Volkswagen Group",
+        "rank": 4,
+        "value": "101,4 Mrd.",
+        "solved": false
+      }, {
+        "label": "BASF",
+        "rank": 6,
+        "value": "95,3 Mrd.",
+        "solved": false
+      }, {
+        "label": "Daimler",
+        "rank": 7,
+        "value": "85,7 Mrd.",
+        "solved": false
+      }, {
+        "label": "Deutsche Telekom",
+        "rank": 8,
+        "value": "80,8 Mrd.",
+        "solved": false
+      }, {
+        "label": "BMW",
+        "rank": 9,
+        "value": "72,3 Mrd.",
+        "solved": false
+      }
+    ]
+  },
+  {
+    "topic": "Länder der Erde nach Gesamtfläche (viel nach wenig)",
+    "reference": {
+      "label": "Deutschland",
+      "rank": 7,
+      "value": "357.022 km²",
+      "solved": false
+    },
+    "entries": [{
+        "label": "Kanada",
+        "rank": 1,
+        "value": "9.984.670 km² ",
+        "solved": false
+      },
+      {
+        "label": "Volksrepublik China",
+        "rank": 2,
+        "value": "9.596.960 km²",
+        "solved": false
+      }, {
+        "label": "Argentinien",
+        "rank": 3,
+        "value": "2.780.400 km²",
+        "solved": false
+      }, {
+        "label": "Kasachstan",
+        "rank": 4,
+        "value": "2.724.900",
+        "solved": false
+      }, {
+        "label": "Spanien",
+        "rank": 5,
+        "value": "505.370 km²",
+        "solved": false
+      }, {
+        "label": "Japan",
+        "rank": 6,
+        "value": "377.975 km²",
+        "solved": false
+      }, {
+        "label": "Ghana",
+        "rank": 8,
+        "value": "238.533 km²",
+        "solved": false
+      }, {
+        "label": "Uruguay",
+        "rank": 9,
+        "value": "176.215 km²",
+        "solved": false
+      }
+    ]
+  }
+
+]

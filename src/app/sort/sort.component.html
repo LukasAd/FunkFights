@@ -1,0 +1,91 @@
+<div class="container">
+  <h1 style="text-align:center">Sortieren</h1>
+  <div *ngIf="!startGameBool">
+    <div class="row justify-content-sm-center" style="margin-top:20px">
+      <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
+    </div>
+  </div>
+
+
+  <div *ngIf="startGameBool">
+    <app-game-score [bestOf]="bestOf"></app-game-score>
+
+    <div class="row justify-content-sm-center" style="margin: 20px;">
+      <div class="card topic" style="padding:10px;">
+        <h2 style="text-align: center;">
+          {{levelData.topic}}
+        </h2>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[0].solved}"
+        (click)="makeEntryActive(0)">{{levelEntries[0].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[1].solved}"
+        (click)="makeEntryActive(1)">{{levelEntries[1].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[2].solved}"
+        (click)="makeEntryActive(2)">{{levelEntries[2].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[3].solved}"
+        (click)="makeEntryActive(3)">{{levelEntries[3].label}}</div>
+    </div>
+    <div class="row">
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[4].solved}"
+        (click)="makeEntryActive(4)">{{levelEntries[4].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[5].solved}"
+        (click)="makeEntryActive(5)">{{levelEntries[5].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[6].solved}"
+        (click)="makeEntryActive(6)">{{levelEntries[6].label}}</div>
+      <div class="choices col-sm btn btn-primary" [ngClass]="{'solved':levelEntries[7].solved}"
+        (click)="makeEntryActive(7)">{{levelEntries[7].label}}</div>
+    </div>
+
+    <div class="row justify-content-sm-center q-box">
+      <div class="col-8 my-auto">
+        <div class="row">
+          <div class="col-10 my-auto">
+            <table class="rnk-tbl">
+              <tr *ngFor="let entry of candSolEntries; let i = index">
+                <td class="card rnk" *ngIf="!showSolutionBool" [ngClass]="{
+              'correct':(i==lastInsertIndex && solCorrect==='correct'),
+              'incorrect':(i==lastInsertIndex && solCorrect==='incorrect')}">
+                  {{i+1}}. {{entry.label}}
+                </td>
+                <td class="card rnk" *ngIf="showSolutionBool">
+                  <div>
+                    <div style="display: inline-block">{{i+1}}. {{entry.label}}</div>
+                    &nbsp;
+                    <div style="color: grey; display: inline-block">( {{entry.value}} )</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="col-2 my-auto" *ngIf="!showSolutionBool">
+            <table style="width:100%;">
+              <td class="card rnk" style="cursor: pointer; text-align: center;" (click)="rankEntry(0)">
+                1
+              </td>
+              <tr *ngFor="let entry of candSolEntries; let i = index">
+                <td class="card rnk" style="cursor: pointer; text-align: center;" (click)="rankEntry(i+1)">
+                  {{i+2}}
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin:50px;">
+      <button class="btn btn-primary col-3" style=" float: left;" (click)="updateLevel(false)">Previous Round</button>
+      <h2 class="round-count col-4" style="text-align: center;">Runde: {{level+1}}</h2>
+      <div class="col-2">
+        <div class="btn btn-primary" (click)="showSolution()">Lösung</div>
+      </div>
+      <button class="btn btn-primary col-3" style="float: right;" (click)="updateLevel(true)">Next Round</button>
+    </div>
+  </div>
+</div>
