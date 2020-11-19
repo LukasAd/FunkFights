@@ -1,15 +1,15 @@
 <div class="container">
   <h1 style="text-align:center">Sortieren</h1>
+
+  <app-game-score [bestOf]="bestOf"></app-game-score>
+
   <div *ngIf="!startGameBool">
     <div class="row justify-content-sm-center" style="margin-top:20px">
       <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
     </div>
   </div>
 
-
   <div *ngIf="startGameBool">
-    <app-game-score [bestOf]="bestOf"></app-game-score>
-
     <div class="row justify-content-sm-center" style="margin: 20px;">
       <div class="card topic" style="padding:10px;">
         <h2 style="text-align: center;">
