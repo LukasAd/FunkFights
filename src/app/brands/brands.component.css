@@ -1,8 +1,3 @@
-.brands-view {
-  width: 900px;
-  margin: auto;
-}
-
 img {
   margin: auto;
   display: block;
@@ -10,12 +5,7 @@ img {
   max-height: 100px;
 }
 
-.brand-div {
-  margin: auto;
-  height: 700px;
-}
-
-.brand-card {
+.card {
   margin: 20px;
   padding: 5px;
   background-color: white;
@@ -32,12 +22,6 @@ img {
 
 table {
   margin: auto;
-}
-
-.level-nav {
-  margin: auto;
-  padding: 25px;
-  width: 900px;
 }
 
 .level {

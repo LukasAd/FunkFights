@@ -5,17 +5,17 @@
 
   <div *ngIf="startGameBool">
     <div class="row justify-content-sm-center" style="margin-top:20px">
-      <button class="btn-primary col-sm-3" (click)="startGame()">Start Game</button>
+      <button class="btn-primary col-3" (click)="startGame()">Start Game</button>
     </div>
   </div>
 
   <div *ngIf="!startGameBool">
     <div class="row">
-      <div class="col-sm">
+      <div class="col">
         <table>
           <tr *ngFor="let row of table; trackBy: trackRow">
             <td *ngFor="let cell of row; trackBy: trackRecord">
-              <div class="card brand-card container">
+              <div class="card container">
                 <div class="row" style="height: 120px">
                   <img src="{{getPicture(cell.id)}}" type="button" (click)="toggleSol(cell.id)">
                   <my-child [showMePartially]="sol"></my-child>
