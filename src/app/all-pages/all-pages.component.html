@@ -4,12 +4,12 @@
       <div class="card  w-75 p-3">
         <table class="table">
           <tr>
-            <th scope="col">Spielname</th>
+            <th scope="col">Spielname und Link</th>
             <th scope="col">Beschreibung</th>
           </tr>
           <tr *ngFor="let game of games">
             <td>
-                {{game.name}}
+              <a routerLinkActive="active" routerLink="/{{game.path}}">{{game.name}}</a>
             </td>
             <td>
                 {{game.description}}

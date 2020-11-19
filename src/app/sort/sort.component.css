@@ -23,15 +23,7 @@
 }
 
 .q-box{
-    padding:10px;
-    margin: 20px;
-    /*
-    border-style: solid;
-    border-color: var(--secondary);
-    border-width: 5px;
-    border-radius: 10px;*/
-    height: 500px;
-    
+    height: 500px; 
 }
 
 /* mark correct solutions temporary green*/
