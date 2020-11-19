@@ -1,7 +1,6 @@
 import { Component, OnInit, TrackByFunction } from '@angular/core';
 import { MatchDataService } from '../matchData/matchData.service';
 import BrandsJson from '../../assets/brands/brands.json';
-import { MatchData } from '../matchData/matchData';
 
 
 
@@ -13,9 +12,9 @@ import { MatchData } from '../matchData/matchData';
 export class BrandsComponent implements OnInit {
   bestOf: number = 5;
   startGameBool: boolean = true;
-  matchData: MatchData;
-  columns: number = 4;
+
   recordsPerLevel: number = 12;
+  columns: number = 4;
   level: number = 0;
   records = BrandsJson;
   subRecords = [];
@@ -25,19 +24,14 @@ export class BrandsComponent implements OnInit {
   constructor(private matchDataService: MatchDataService) { }
 
   ngOnInit() {
-    this.setRoundRecords();
-    this.setMatchData();
+    this.setLevelData();
   }
 
   startGame() {
     this.startGameBool = !this.startGameBool;
   }
 
-  setMatchData() {
-    this.matchData = this.matchDataService.getMatchData();
-  }
-
-  public setRoundRecords() {
+  setLevelData() {
     let offset = this.level * this.recordsPerLevel;
     this.subRecords = this.records.slice(offset, offset + this.recordsPerLevel);
   }
@@ -63,31 +57,27 @@ export class BrandsComponent implements OnInit {
     return item;
   };
 
-  public getLogo(id) {
-    let path = 'assets/brands/' + id + '/logo.png'
-    return path;
+  getPicture(id): string{
+    if(this.records[id-1].sol){
+      return 'assets/brands/' + id + '/sol.png';
+    } else {
+      return 'assets/brands/' + id + '/logo.png';
+    }
   }
 
-  public getSol(id) {
-    let path = 'assets/brands/' + id + '/sol.png'
-    return path;
-  }
-
-
-
-  public toggleSol(i) {
+  toggleSol(i) {
     i = i - 1;
     this.records[i].sol = !this.records[i].sol;
   }
 
-  public previousLevel() {
-    this.level--;
-    this.setRoundRecords();
-  }
-
-  public nextLevel() {
-    this.level++;
-    this.setRoundRecords();
+  updateLevel(up: boolean) {
+    if (up && ((this.level + 1) < (this.records.length / this.recordsPerLevel))) {
+      this.level++;
+      this.setLevelData();
+    } else if (!up && (this.level > 0)) {
+      this.level--;
+      this.setLevelData();
+    }
   }
 
 }

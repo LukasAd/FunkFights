@@ -12,7 +12,6 @@ img {
 
 .brand-div {
   margin: auto;
-  /* width: 900px; */
   height: 700px;
 }
 
@@ -41,12 +40,6 @@ table {
   width: 900px;
 }
 
-.border {
-  border: solid;
-  background-color: yellow;
-}
-
-.round-count {
+.level {
   text-align: center;
-  display: inline;
 }

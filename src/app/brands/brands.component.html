@@ -17,16 +17,13 @@
             <td *ngFor="let cell of row; trackBy: trackRecord">
               <div class="card brand-card container">
                 <div class="row" style="height: 120px">
-                  <img src="{{ cell.sol ? getSol(cell.id) : getLogo(cell.id) }}" type="button"
-                    (click)="toggleSol(cell.id)">
+                  <img src="{{getPicture(cell.id)}}" type="button" (click)="toggleSol(cell.id)">
                   <my-child [showMePartially]="sol"></my-child>
                 </div>
                 <div class="row" style="height:30px">
                   <p class="brand_cell_number" style="font-size:20px">{{(cell.id-1)%recordsPerLevel}}</p>
                 </div>
-
               </div>
-
             </td>
           </tr>
         </table>
@@ -34,9 +31,9 @@
     </div>
 
     <div class="row">
-      <button class="btn btn-primary col-sm" style=" float: left;" (click)="previousLevel()">Previous Round</button>
-      <h2 class="round-count col-sm">Runde: {{level+1}}</h2>
-      <button class="btn btn-primary col-sm" style="float: right;" (click)="nextLevel()">Next Round</button>
+      <button class="btn btn-primary col" (click)="updateLevel(false)">Previous Round</button>
+      <h2 class="level col">Runde: {{level+1}}</h2>
+      <button class="btn btn-primary col" (click)="updateLevel(true)">Next Round</button>
     </div>
   </div>
   <br>
