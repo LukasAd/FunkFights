@@ -1,0 +1,8 @@
+.q-box{
+    padding:20px;
+    border-style: solid;
+    border-color: var(--secondary);
+    border-width: 5px;
+    border-radius: 10px;
+    width: 60%;
+}

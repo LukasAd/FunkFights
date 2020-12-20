@@ -16,5 +16,17 @@
         "question": "Wann hat Nero Rom niedergebrannt?",
         "year": 64,
         "factor": 100
+    },
+    {
+        "id": 3,
+        "question": "Martin Luther schlägt seine 95 Thesen an die Tür der Schlosskirche in Wittenberg",
+        "year": 1517,
+        "factor": 10
+    },
+    {
+        "id": 4,
+        "question": "Costa Cordalis gewinnt das Dschungelcamp",
+        "year": 2004,
+        "factor": 1
     }
 ]

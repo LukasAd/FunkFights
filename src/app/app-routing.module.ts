@@ -11,7 +11,7 @@ import { CardDuelComponent } from './card-duel/card-duel.component';
 import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
 import { SortComponent} from './sort/sort.component';
 import { AllPagesComponent} from './all-pages/all-pages.component';
-
+import { ComplexSayingsComponent } from './complex-sayings/complex-sayings.component';
 
 
 const routes: Routes = [  
@@ -27,6 +27,8 @@ const routes: Routes = [
   { path: 'whenwasthat', component: WhenwasthatComponent},
   { path: 'sort', component: SortComponent},
   { path: 'all-pages', component: AllPagesComponent},
+  { path: 'complex-sayings', component: ComplexSayingsComponent},
+
 ];
 
 @NgModule({

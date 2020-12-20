@@ -17,6 +17,7 @@ import { CardDuelComponent } from './card-duel/card-duel.component';
 import { WhenwasthatComponent } from './whenwasthat/whenwasthat.component';
 import { SortComponent } from './sort/sort.component';
 import { AllPagesComponent } from './all-pages/all-pages.component';
+import { ComplexSayingsComponent } from './complex-sayings/complex-sayings.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AllPagesComponent } from './all-pages/all-pages.component';
     WhenwasthatComponent,
     SortComponent,
     AllPagesComponent,
+    ComplexSayingsComponent,
   ],
   imports: [
     FormsModule,
